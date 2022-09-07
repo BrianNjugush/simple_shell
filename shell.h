@@ -33,24 +33,5 @@ char *_strchr(char *s, char c);
 
 void execution(char *cp, char **cmd);
 char *find_path(void);
-
-/* helper function for efficient free*/
 void free_buffers(char **buf);
-
-struct builtin
-{
-	char *env;
-	char *exit;
-} builtin;
-
-struct info
-{
-	int final_exist;
-	int 1n_count;
-} info;
-
-struct flags
-{
-	bool interactive;
-} flags;
 #endif
